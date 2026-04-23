@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#FFEEEEEE</color>
+    <color name="burnt_umber">#8A3324</color>
+    <color name="burnt_umber_light">#B85C3A</color>
+    <color name="burnt_umber_very_light">#E6B8A6</color>
+    <color name="burnt_umber_dark">#5C241A</color>
+    <color name="sand_100">#FFFAF6F2</color>
+    <color name="cream_50">#FFF9F6F2</color>
+
+    <color name="primary">#8A3324</color>
+    <color name="primary_variant">#5C241A</color>
+    <color name="secondary">#B85C3A</color>
+
+    <color name="gold_light">#FAD88A</color>
+    <color name="peach_light">#E6B8A6</color>
+    <color name="bg_screen_soft">#F9F6F2</color>
+    <color name="text_primary">#2E2420</color>
+    <color name="text_secondary">#5D4A43</color>
+    <color name="card_surface">#FFFFFF</color>
+    <color name="divider">#EEEEEE</color>
+
+    <color name="category_box_bg">#D59940</color>
+    <color name="featured_product_bg">#D59940</color>
+    <color name="bronze">#D59940</color>
+
+    <color name="heading_color">#8A3324</color>
+</resources>

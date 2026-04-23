@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Zumar</string>
+    <string name="home_title">Fragrance Collection</string>
+    <string name="home_subtitle_default">Browse curated scents</string>
+</resources>

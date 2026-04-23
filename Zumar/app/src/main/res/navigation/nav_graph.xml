@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/navigation_home">
+
+    <fragment
+            android:id="@+id/navigation_home"
+            android:name="com.varuntulsiyani.project.view.HomeFragment"
+            android:label="Home"
+            tools:layout="@layout/fragment_home">
+        <action
+                android:id="@+id/action_home_to_product_list"
+                app:destination="@id/navigation_product_list" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_profile"
+            android:name="com.varuntulsiyani.project.view.ProfileFragment"
+            android:label="Profile"
+            tools:layout="@layout/fragment_profile">
+        <action
+                android:id="@+id/action_settings_to_shipping"
+                app:destination="@id/navigation_shipping_address" />
+        <action
+                android:id="@+id/action_settings_to_payment"
+                app:destination="@id/navigation_payment" />
+        <action
+                android:id="@+id/action_settings_to_orders"
+                app:destination="@id/navigation_order_list" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_login"
+            android:name="com.varuntulsiyani.project.view.LoginFragment"
+            android:label="Login"
+            tools:layout="@layout/fragment_login">
+        <action
+                android:id="@+id/action_login_to_home"
+                app:destination="@id/navigation_home"
+                app:popUpTo="@id/nav_graph"
+                app:popUpToInclusive="true" />
+        <action
+                android:id="@+id/action_login_to_signup"
+                app:destination="@id/navigation_signup" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_signup"
+            android:name="com.varuntulsiyani.project.view.SignupFragment"
+            android:label="Sign Up"
+            tools:layout="@layout/fragment_signup">
+        <action
+                android:id="@+id/action_signup_to_home"
+                app:destination="@id/navigation_home"
+                app:popUpTo="@id/nav_graph"
+                app:popUpToInclusive="true" />
+        <action
+                android:id="@+id/action_signup_to_login"
+                app:destination="@id/navigation_login" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_product_list"
+            android:name="com.varuntulsiyani.project.view.ProductListFragment"
+            android:label="Products"
+            tools:layout="@layout/fragment_product_list">
+        <action
+                android:id="@+id/action_product_list_to_detail"
+                app:destination="@id/navigation_product_detail" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_product_detail"
+            android:name="com.varuntulsiyani.project.view.ProductDetailsFragment"
+            android:label="Product Details"
+            tools:layout="@layout/fragment_product_details">
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_cart"
+            android:name="com.varuntulsiyani.project.view.CartFragment"
+            android:label="Cart"
+            tools:layout="@layout/fragment_cart">
+        <action
+                android:id="@+id/action_cart_to_payment"
+                app:destination="@id/navigation_payment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_order"
+            android:name="com.varuntulsiyani.project.view.OrderFragment"
+            android:label="Order Details"
+            tools:layout="@layout/fragment_order">
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_order_list"
+            android:name="com.varuntulsiyani.project.view.OrderListFragment"
+            android:label="My Orders"
+            tools:layout="@layout/fragment_order_list">
+        <action
+                android:id="@+id/action_order_list_to_details"
+                app:destination="@id/navigation_order" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_payment"
+            android:name="com.varuntulsiyani.project.view.PaymentFragment"
+            android:label="Payment"
+            tools:layout="@layout/fragment_payment">
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_shipping_address"
+            android:name="com.varuntulsiyani.project.view.ShippingAddressFragment"
+            android:label="Shipping Address"
+            tools:layout="@layout/fragment_shipping_address">
+
+    </fragment>
+</navigation>
